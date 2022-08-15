@@ -1,0 +1,5 @@
+# test content
+docker/volumes
+
+# exported images
+docker/*.tar
