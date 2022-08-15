@@ -1,0 +1,19 @@
+version: '3'
+services:
+  nodeserver:
+    container_name: website
+
+    image: ${npm_echo_name:-website}
+    environment:
+      - DEBUG=*
+
+    ports:
+        - '3000:80'
+    expose:
+      - '3000'
+
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+
+    restart: unless-stopped

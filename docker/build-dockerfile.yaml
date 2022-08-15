@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nuxt-server:
+    container_name: ${npm_echo_name:-website}
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    image: ${npm_echo_name:-website}

@@ -22,7 +22,9 @@ Project
 ```
 
 ### how to get started
-Clone this project into your project root, change into `./docker` (modify the config) and `npm start` - the terminal will show '0.0.0.0:80' wich correspondents to 'http://localhost:3000' with the default compose file.
+1. Clone this project into your project root `git clone https://github.com/BananaAcid/nuxt3-publish-docker.git .`
+2. change into `./docker` (modify the config) 
+3. and `npm start` - the terminal will show '0.0.0.0:80' wich correspondents to 'http://localhost:3000' with the default compose file.
 
 ### config
 The `./docker/` folder contains a `package.json` with all required scripts and the image name config (`name`, `config.publisher` and `version`).
