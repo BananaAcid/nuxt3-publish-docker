@@ -13,7 +13,7 @@
         "---": "",
         "build": "npm_echo_name=$npm_package_config_publisher\/$npm_package_name:$npm_package_version    docker compose -f build-dockerfile.yaml build",
         "test": "npm_echo_name=$npm_package_config_publisher\/$npm_package_name:$npm_package_version    docker compose up",
-        "export": "npm_echo_name=$npm_package_config_publisher\/$npm_package_name:$npm_package_version    docker save -o krimi2go.tar $npm_echo_name",
+        "export": "npm_echo_name=$npm_package_config_publisher\/$npm_package_name:$npm_package_version  &&  docker save -o $npm_package_name.$npm_package_version.tar $npm_echo_name",
         "----": "",
         "echo-name": "npm_echo_name=$npm_package_config_publisher\/$npm_package_name:$npm_package_version && echo $npm_echo_name",
         "build-files-only": "cd ../app && npm run build",
